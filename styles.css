@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.form-control input {
+    float: right;
+}
+
+#submit {
+    width: 100px;
+    height: 40px;
+    background-color: greenyellow;
+    border-radius: 20%;
+}
