@@ -11,6 +11,10 @@ body {
     float: right;
 }
 
+.form-control button {
+    float: right;
+}
+
 #submit {
     width: 100px;
     height: 40px;

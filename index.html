@@ -5,28 +5,33 @@
         <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
     <body>
-        <form>
+        <form id="infoForm">
             <h1>Customer Information</h1>
             <hr>
             <br>
             <div class=form-control>
                 <label for="firstName">First Name:</label>
-                <input type="text" name="firstName" />
+                <input type="text" name="firstName" onkeyup="validate();" />
+                <div id="errorFirstName"></div>
             </div>
             <br>
             <div class=form-control>
                 <label for="lastName">Last Name:</label>
-                <input type="text" name="lastName" />
+                <input type="text" name="lastName" onkeyup="validate();" />
+                <div id="errorLastName"></div>
             </div>
             <br>
             <div class="form-control">
                 <label for="email">Email:</label>
-                <input type="email" name="email" />
+                <input type="email" name="email" onkeyup="validate();" />
+                <div id="errorEmail"></div>
             </div>
             <br>
             <div class="form-control">
-                <input id="submit" type="submit" value="Submit" />
+                <button id="submit" value="Submit" onclick="validate();finalValidate();">Submit</button>
+                <div id="errorFinal"></div>
             </div>
         </form>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
